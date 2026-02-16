@@ -1,4 +1,7 @@
-﻿# 🧩 IdentiPoint — Lightweight Identity & Authentication Library for .NET
+[![NuGet Downloads](https://img.shields.io/nuget/dt/IdentiPoint.svg)](https://github.com/Ethan0007/IdentiPoint)
+[![NuGet Version](https://img.shields.io/nuget/v/IdentiPoint.svg)](https://github.com/Ethan0007/IdentiPoint)
+ 
+ # 🧩 IdentiPoint — Lightweight Identity & Authentication Library for .NET
 
 A lightweight, single-file **Mini Identity Server** designed for .NET 8 applications.  
 Provides user registration, login, JWT-based authentication, and refresh tokens — without the complexity of ASP.NET Core Identity.
@@ -234,4 +237,5 @@ If using SQL Server or another relational DB:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
 

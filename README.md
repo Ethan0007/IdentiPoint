@@ -1,4 +1,4 @@
-﻿# 🧩 MiniIdentity for .NET 8
+﻿# 🧩 IdentiPoint — Lightweight Identity & Authentication Library for .NET
 
 A lightweight, single-file **Mini Identity Server** designed for .NET 8 applications.  
 Provides user registration, login, JWT-based authentication, and refresh tokens — without the complexity of ASP.NET Core Identity.
@@ -234,3 +234,4 @@ If using SQL Server or another relational DB:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+

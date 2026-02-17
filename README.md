@@ -72,9 +72,9 @@ builder.Services.AddDbContext<MiniIdentityDbContext>(opt =>
 // ✅ Register MiniIdentity
 builder.Services.AddMiniIdentity(options =>
 {
-    options.JwtSecret = "YourStrongSecretKeyHere_AtLeast32Chars"; // Must be at least 32 chars
-    options.Issuer = "IdentiPoint";
-    options.Audience = "IdentiPointClients";
+    options.JwtSigningKey = "YourStrongSecretKeyHere_AtLeast32Chars"; // Must be at least 32 chars
+    options.JwtIssuer = "IdentiPoint";
+    options.JwtAudience = "IdentiPointClients";
 });
 
 // ✅ Configure JWT Authentication
@@ -235,6 +235,7 @@ If using SQL Server or another relational DB:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
 
 
 

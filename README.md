@@ -214,13 +214,11 @@ namespace IdentiPoint
         public CustomIdentityDbContext(DbContextOptions<CustomIdentityDbContext> options)
             : base(options) { }
 
-        public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 
-    public class UserProfile
+    public class AppUser : MiniUser
     {
-        public int Id { get; set; }
-        public string UserId { get; set; }  // FK to MiniUser.Id
         public string FullName { get; set; }
         public string Address { get; set; }
     }
@@ -237,5 +235,6 @@ If using SQL Server or another relational DB:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
 
 

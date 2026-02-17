@@ -4,18 +4,28 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <IsPackable>true</IsPackable>
+	  <PackageId>IdentiPoint</PackageId>
+	  <Version>1.0.6</Version>
+	  <Authors>Joever Monceda</Authors>
+	  <Description>IdentiPoint — Lightweight Identity Server and Authentication Library for .NET</Description>
+	  <PackageTags>mini identity server authentication</PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <RepositoryUrl>https://github.com/Ethan0007/IdentiPoint</RepositoryUrl>
+	  <PackageReleaseNotes>
+		  - Initial release of IdentiPointServer 🚀
+		  - Lightweight identity management and authentication library
+		  - JWT-based login and refresh token support
+		  - DI-ready for ASP.NET Core applications
+		  - Easily extendable for custom user stores
+	  </PackageReleaseNotes>	  
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.14.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
-	<PackageReference Include="xunit.assert" Version="2.9.3" />
-	<PackageReference Include="xunit" Version="2.4.2" />
-	<PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
-	<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />	  
-  </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.10" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.14.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+	</ItemGroup>
 </Project>

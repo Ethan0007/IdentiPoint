@@ -45,15 +45,15 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 ```
 ### 📁 Folder Setup Example
-/YourProject
- ├── Controllers/
- │    ├── AuthController.cs
- │    └── ProfileController.cs
- ├── Data/
- │    └── CustomIdentityDbContext.cs
- ├── Program.cs
- ├── appsettings.json
- └── README.md
+/YourProject   
+├── Controllers/   
+│ ├── AuthController.cs   
+│ └── ProfileController.cs   
+├── Data/   
+│ └── CustomIdentityDbContext.cs   
+├── Program.cs   
+├── appsettings.json   
+└── README.md   
 
 ### 🏗️ Program.cs (SQL Server Setup)
 ```
@@ -235,6 +235,7 @@ If using SQL Server or another relational DB:
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
+
 
 
 

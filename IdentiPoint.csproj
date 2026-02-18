@@ -7,7 +7,7 @@
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <IsPackable>true</IsPackable>
 	  <PackageId>IdentiPoint</PackageId>
-	  <Version>1.0.6</Version>
+	  <Version>1.0.7</Version>
 	  <Authors>Joever Monceda</Authors>
 	  <Description>IdentiPoint — Lightweight Identity Server and Authentication Library for .NET</Description>
 	  <PackageTags>mini identity server authentication</PackageTags>
@@ -29,3 +29,4 @@
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
 	</ItemGroup>
 </Project>
+
